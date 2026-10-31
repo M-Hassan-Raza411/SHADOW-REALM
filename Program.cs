@@ -8,7 +8,7 @@ string playerName = Console.ReadLine();
 
 Console.WriteLine("enter ur age");
 
-int playerAge=Convert.ToInt32(Console.ReadLine());
+int playerAge = Convert.ToInt32(Console.ReadLine());
 
 int health = 100;
 int attack = 15;
@@ -40,7 +40,7 @@ Console.Write("Your choice: ");
 
 string choice = Console.ReadLine();
 
-string className="";
+string className = "";
 
 if (choice == "1")
 {
@@ -80,7 +80,6 @@ Console.WriteLine();
 
 int goblinHealth = 50;
 int goblinAttack = 10;
-int playerDamage = attack - 5; // Player's damage to goblin
 bool isDefending = false;
 while (goblinHealth > 0 && health > 0)
 {
@@ -96,28 +95,35 @@ while (goblinHealth > 0 && health > 0)
 
     if (action == "1")
     {
-        goblinHealth -= playerDamage;
-        Console.WriteLine("You attack the goblin for " + playerDamage + " damage!");
+        goblinHealth -= attack;
+        Console.WriteLine("You attack for " + attack + " damage!");
     }
     else if (action == "2")
-    {   isDefending = true;
-        int damageTaken = isDefending ? goblinAttack / 2 : 0;
-        if (damageTaken < 0) damageTaken = 0;
-        health -= damageTaken;
-        Console.WriteLine("You defend against the goblin's attack and take " + damageTaken + " damage!");
+    {
+        isDefending = true;
+        Console.WriteLine("You prepare to defend!");
     }
     else
     {
-        Console.WriteLine("Invalid action! The goblin attacks you!");
-        health -= goblinAttack;
+        Console.WriteLine("Invalid action!");
+        continue;
     }
 
     if (goblinHealth > 0)
     {
-        int damageTaken = isDefending ? 0 : goblinAttack - defense;
-        if (damageTaken < 0) damageTaken = 0;
+        int damageTaken = goblinAttack - defense;
+
+        if (damageTaken < 0)
+            damageTaken = 0;
+
+        if (isDefending)
+            damageTaken /= 2;
+
         health -= damageTaken;
-        Console.WriteLine("The goblin attacks you for " + damageTaken + " damage!");
+
+        Console.WriteLine("Goblin attacks for " + damageTaken + " damage!");
+
+        isDefending = false;
     }
 
     Console.WriteLine();
