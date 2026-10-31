@@ -1,0 +1,14 @@
+C:\Users\hassanraza\Desktop\c# rpg\obj\Debug\net10.0\c# rpg.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hassanraza\Desktop\c# rpg\obj\Debug\net10.0\c# rpg.AssemblyInfoInputs.cache
+C:\Users\hassanraza\Desktop\c# rpg\obj\Debug\net10.0\c# rpg.AssemblyInfo.cs
+C:\Users\hassanraza\Desktop\c# rpg\obj\Debug\net10.0\c# rpg.csproj.CoreCompileInputs.cache
+C:\Users\hassanraza\Desktop\c# rpg\bin\Debug\net10.0\c# rpg.exe
+C:\Users\hassanraza\Desktop\c# rpg\bin\Debug\net10.0\c# rpg.deps.json
+C:\Users\hassanraza\Desktop\c# rpg\bin\Debug\net10.0\c# rpg.runtimeconfig.json
+C:\Users\hassanraza\Desktop\c# rpg\bin\Debug\net10.0\c# rpg.dll
+C:\Users\hassanraza\Desktop\c# rpg\bin\Debug\net10.0\c# rpg.pdb
+C:\Users\hassanraza\Desktop\c# rpg\obj\Debug\net10.0\c# rpg.dll
+C:\Users\hassanraza\Desktop\c# rpg\obj\Debug\net10.0\refint\c# rpg.dll
+C:\Users\hassanraza\Desktop\c# rpg\obj\Debug\net10.0\c# rpg.pdb
+C:\Users\hassanraza\Desktop\c# rpg\obj\Debug\net10.0\c# rpg.genruntimeconfig.cache
+C:\Users\hassanraza\Desktop\c# rpg\obj\Debug\net10.0\ref\c# rpg.dll
