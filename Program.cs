@@ -1,4 +1,8 @@
-﻿Console.WriteLine("================================");
+﻿Console.BackgroundColor = ConsoleColor.Black;
+Console.ForegroundColor = ConsoleColor.Red;
+Console.Clear();
+
+Console.WriteLine("================================");
 Console.WriteLine("       SHADOW REALM");
 Console.WriteLine("================================");
 
@@ -95,8 +99,11 @@ while (goblinHealth > 0 && health > 0)
 
     if (action == "1")
     {
+        Console.ForegroundColor = ConsoleColor.Green;
         goblinHealth -= attack;
+
         Console.WriteLine("You attack for " + attack + " damage!");
+        Console.ResetColor();
     }
     else if (action == "2")
     {
@@ -110,7 +117,8 @@ while (goblinHealth > 0 && health > 0)
     }
 
     if (goblinHealth > 0)
-    {
+
+    {   Console.ForegroundColor = ConsoleColor.DarkRed;
         int damageTaken = goblinAttack - defense;
 
         if (damageTaken < 0)
@@ -124,6 +132,7 @@ while (goblinHealth > 0 && health > 0)
         Console.WriteLine("Goblin attacks for " + damageTaken + " damage!");
 
         isDefending = false;
+        Console.ResetColor();
     }
 
     Console.WriteLine();
